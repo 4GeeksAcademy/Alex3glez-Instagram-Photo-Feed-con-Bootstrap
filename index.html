@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+<main>  
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-2 mb-2 d-flex">
+  <a class="navbar-brand col" href="#"> <img src="iconos/Miaustagram-removebg-preview.png" alt="" width="70" height="70"> </a>
+  <ul class="nav nav-pills d-flex">
+   <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createNewPost">
+  Create new post
+</button>
+
+    <div class="modal fade" id="createNewPost" tabindex="-1" aria-labelledby="createNewPost" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="input">
+  <h6 class="input-text mb-2">Caption:</h6>
+  <textarea class="form-control" aria-label="With textarea"></textarea>
+  
+    <div class="d-flex gap-2 d-md-block">
+  <button class="btn btn-light mx-1 my-2" type="button"><img src="iconos/icons8-cámara-30.png" alt="" width="20" height="20"></button>
+  <button class="btn btn-light mx-1 my-2" type="button"><img src="iconos/icons8-marcador-50.png" alt="" width="20" height="20"></button>
+</div>
+  
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <li class="nav-item dropdown  p-0 d-flex">
+      <a class="nav-link dropdown-toggle btn bg-secondary " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        <img  src="iconos/settings (1).svg" alt=""></a>
+      <ul class="dropdown-menu dropdown-menu-end">
+        <li><a class="dropdown-item" href="#scrollspyHeading3">Profile</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Accesibility</a></li>
+        <li><a class="dropdown-item" href="#scrollspyHeading4">Privacity and Data</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item text-danger" href="#scrollspyHeading5">Log out</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</main> 
+
+<content>
+<ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid" type="button" role="tab" aria-controls="pills-grid" aria-selected="true"><img src="iconos/icons8-cuadrícula-64.png" alt="Bootstrap" width="25" height="25"></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-feed-tab" data-bs-toggle="pill" data-bs-target="#pills-feed" type="button" role="tab" aria-controls="pills-feed" aria-selected="false"><img src="iconos/icons8-feed-de-actividad-30.png" alt="Bootstrap" width="25" height="25"></button>
+  </li>
+  
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab" tabindex="0">
+    <div class="container-fluid">
+     <div class="row g-2">
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+      <article class="col-4 ""><img class="img-fluid border border-secondary rounded" src="imagenesPost/ima1.jpg" alt=""></article>
+
+     </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="pills-feed" role="tabpanel" aria-labelledby="pills-feed-tab" tabindex="0">
+    <div class="container ">
+    <div class="row g-5 ">
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+       
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+      <article class="col-12  col-xl-8 mx-auto">
+        <div class="bg-light  border border-secondary border-1 rounded w-75 mx-auto">
+          <header class="d-flex justify-content-between m-1 align-items-center">
+            <h5 class="mb-0">Gato campero</h5>
+            <p class="fs-6 fst-italic fw-lighter"><small>17/08</small></p>
+          </header>
+        <picture class="d-flex justify-content-center">
+          <img class="img-fluid " src="imagenesPost/ima1.jpg" alt="">
+        </picture>
+        <footer>
+          <p class="m-1 mb-3"> <b>104 Likes</b> <br> This is an exampe of a very good photo </p>
+        </footer>
+         </div>
+      </article>
+
+    </div>
+    </div>
+  </div>
+ 
+  
+</div>
+</content>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>  
+</body>
+</html>
